@@ -3,9 +3,9 @@ package main;
 import java.util.function.DoubleUnaryOperator;
 
 public class RunnableCalculator implements Runnable {
-    private IntegralCalculator calculator;
+    protected IntegralCalculator calculator;
 
-    private Main main;
+    protected Main main;
 
     public RunnableCalculator(double a, double b, int n, DoubleUnaryOperator f, Main main) {
         calculator = new IntegralCalculator(a,b,n,f);
